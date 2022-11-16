@@ -1,34 +1,39 @@
 # Ranged Ops Integer Set
 
-The purpose of this exercise is to train you in implementing Collections.
+The purpose of this exercise is for you to practice using collections, namely Set.
 
-Estimated workload of this exercise is _60 min_.
+Duration  - _45 minutes_.
 
-### Description
 
-Please, proceed to [RangedOpsIntegerSet](src/main/java/com/epam/autotasks/collections/RangedOpsIntegerSet.java)
-and implement its methods.
+## Description
 
-RangedOpsIntegerSet is a Set of Integer. It has two additional methods:
+In this task, you need to demonstrate how to work with a set of integers encapsulated in the `RangedOpsIntegerSet` class.  
 
-- `boolean add(int fromInclusive, int toExclusive)`
-- `boolean remove(int fromInclusive, int toExclusive)`
+Please proceed to the RangedOpsIntegerSet class and provide implementations of the following methods:  
 
-These methods are for adding/removing ranges of values.
+*	`boolean add(final Integer integer)`  
+   Adds a single value to the set
 
-You need to implement following methods:
+*	`boolean remove(final Object o)`  
+   Removes a single value from the set  
 
-- add (*single-value*) - adds a single value into the set
-- remove (*single-value*) - removes a single value from the set
-- add (*ranged*) - adds a range of values into the set (first argument - inclusive, last argument - exclusive).
-  Return `true` if any of range values were actually added.
-- remove(*ranged*)- removes a range of values from the list (first argument - inclusive, last argument - exclusive).
-  Return `true` if any of range values were actually removed.
-- iterator - iterates over elements of the set in natural order.
-- size - returns the number of current queue elements
+*	`boolean add(int fromInclusive, int toExclusive)`  
+   Adds a range of values to the set (first argument—inclusive; last argument—exclusive); returns true if range values were actually added  
+
+*	`boolean remove(int fromInclusive, int toExclusive)`  
+   Removes a range of values from the list (first argument—inclusive; last argument—exclusive); returns true if range values were actually removed  
+
+*	`Iterator<Integer> iterator()`   
+   Returns an iterator to iterate over elements of the set in natural order  
+
+*	`int size()`  
+   Returns the number of current elements
+
+### Restrictions
+You may not use lambdas   or streams when implementing this task.
 
 ### Examples
-
+1. Adding one range:
 ```java
 RangedOpsIntegerSet set = new RangedOpsIntegerSet();
 set.add(1, 5);
@@ -36,7 +41,7 @@ for(Integer el : set){
     System.out.println(el);
 }
 ```
-
+Output:
 ```
 1
 2
@@ -45,7 +50,7 @@ for(Integer el : set){
 ```
 
 ---
-
+2. Adding two ranges:  
 ```java
 RangedOpsIntegerSet set = new RangedOpsIntegerSet();
 set.add(1, 5);
@@ -65,7 +70,7 @@ for(Integer el : set){
 ```
 
 ---
-
+3. Adding and removing ranges:  
 ```java
 RangedOpsIntegerSet set = new RangedOpsIntegerSet();
 set.add(1, 15);
