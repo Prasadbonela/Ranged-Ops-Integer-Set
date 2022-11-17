@@ -2,7 +2,7 @@
 
 The purpose of this exercise is for you to practice using collections, namely Set.
 
-Duration  - _45 minutes_.
+Duration - **45 minutes**
 
 
 ## Description
@@ -29,10 +29,10 @@ Please proceed to the RangedOpsIntegerSet class and provide implementations of t
 *	`int size()`  
    Returns the number of current elements
 
-### Restrictions
+## Restrictions
 You may not use lambdas   or streams when implementing this task.
 
-### Examples
+## Examples
 1. Adding one range:
 ```java
 RangedOpsIntegerSet set = new RangedOpsIntegerSet();
