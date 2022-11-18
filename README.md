@@ -2,7 +2,7 @@
 
 The purpose of this exercise is for you to practice using collections, namely Set.
 
-Duration - **45 minutes**
+Duration: **45 minutes**
 
 
 ## Description
